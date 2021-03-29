@@ -1,0 +1,160 @@
+/*Author: Juan Pablo Mendieta
+  CSS file for the CS Department Information and Survey pages*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif
+}
+
+.w3-bar,
+h1,
+button {
+  font-family: "Montserrat", sans-serif
+}
+
+h1 {
+  color: #006633;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+body {
+  background-color: rgb(114, 109, 109);
+}
+
+.active {
+  background-color: white;
+}
+
+#depInfo {
+  border: 5px solid;
+  border-color: #006633;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+
+/*Auto adjust comments box according to the screen size*/
+
+textarea {
+  width: 100%;
+}
+
+.textwrapper {
+  border: 1px solid #999999;
+  margin: 5px 0;
+  padding: 3px;
+}
+
+
+/*Make the navbar responsive*/
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  font-size: large;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: gray;
+}
+
+ul.topnav li a.active {
+  background-color: white;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
+.error {
+  color: red;
+}
+
+.tabCustom {
+  background-color: #333;
+  color: #333;
+}
+
+#tabs .ui-state-active {
+  background: rgb(114, 109, 109) !important;
+}
+
+p {
+  text-align: justify;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.parent {
+  text-align: center;
+}
+
+.parent .aligner {
+  display: table-cell;
+  height: inherit;
+  width: inherit;
+  vertical-align: middle;
+}
+
+.container-custom {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.container-img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+/* Bottom left text */
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}

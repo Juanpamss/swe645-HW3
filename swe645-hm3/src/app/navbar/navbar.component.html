@@ -1,0 +1,86 @@
+<!-- Navbar -->
+<div>
+  <ul class="topnav" style="background-color: #f9ab4f">
+    <li><a class="{{surveyClass}}" href="">Survey</a></li>
+    <li><a class="{{surveyListClass}}" href="surveyList">Survey List</a></li>
+  </ul>
+</div>
+
+<!-- Survey form -->
+<div class="w3-row-padding w3-container" style="background-color: #FFCC33; padding-top: 10px;">
+  <h1 class="w3-x-large">Please provide feedback about your campus visit</h1>
+  <form action="index.html" autocomplete="on" id="surveyForm" onsubmit="submitForm()">
+    <div class="w3-row">
+      <h6 style="font-weight: bold;">All fields marked with * are required</h6>
+      <div class="w3-col m6">
+        <label for="name">Name *</label><br>
+        <input type="text" id="name" name="name" required autofocus><br><br>
+        <label for="last name">Last Name *</label><br>
+        <input type="text" id="last name" name="last name" required><br><br>
+        <label for="address">Address *</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+        <label for="city">City *</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+        <label for="state">State *</label><br>
+        <input type="text" id="state" name="state" required><br><br>
+        <label for="preferences" style="font-weight: bold;">What you liked most about George Mason University</label><br>
+        <input type="checkbox" id="students" name="students" value="students">
+        <label for="students"> Students</label><br>
+        <input type="checkbox" id="location" name="location" value="location">
+        <label for="location"> Location</label><br>
+        <input type="checkbox" id="campus" name="campus" value="campus">
+        <label for="campus"> Campus</label><br>
+        <input type="checkbox" id="atmosphere" name="atmosphere" value="atmosphere">
+        <label for="atmosphere"> Atmosphere</label><br>
+        <input type="checkbox" id="dorm rooms" name="dorm rooms" value="dorm rooms">
+        <label for="dorm rooms"> Dorm rooms</label><br>
+        <input type="checkbox" id="sports" name="sports" value="sports">
+        <label for="sports"> Sports</label><br><br>
+        <label for="recomm" style="font-weight: bold;">What is the likelihood you recommend us</label>
+        <select name="recommend" id="recommend">
+          <option value="Very Likely">Very Likely</option>
+          <option value="Likely">Likely</option>
+          <option value="Unlikely">Unlikely</option>
+        </select><br><br>
+      </div>
+      <div class="w3-col m6">
+        <label for="zip">Zip *</label><br>
+        <input type="number" id="zip" name="zip" pattern="[0-9]{5}" required><br><br>
+        <label for="date">Date *</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="telephone">Telephone *</label><br>
+        <input type="tel" id="telephone" name="telephone" placeholder="202-455-6785" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        <label for="email">Email *</label><br>
+        <input type="email" id="email" name="email" placeholder="email@gmail.com" required><br><br>
+        <label for="raffle">Raffle</label><br>
+        <input type="text" id="raffle" name="raffle" pattern="(([0-9]|[1-9][0-9]|100),?){10}" placeholder="10,2,5,13,5,6,8,1,5,99"><br><br>
+        <label for="interested" style="font-weight: bold;">How you got interested in GMU</label><br>
+        <input type="radio" id="friends" name="interested" value="friends">
+        <label for="friends">Friends</label><br>
+        <input type="radio" id="television" name="interested" value="television">
+        <label for="television">Television</label><br>
+        <input type="radio" id="Internet" name="interested" value="Internet">
+        <label for="Internet">Internet</label ><br>
+        <input type="radio" id="other" name="interested" value="other">
+        <label for="other">Other</label><br><br>
+      </div>
+    </div>
+    <div class="w3-row">
+      <div class="w3-col m12">
+        <label for="comments">Comments</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="75" form="surveyForm"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="w3-row">
+      <div class="w3-col m3">
+        <input class="button" type="button" onclick="window.location.replace('index.html')" value="Cancel" />
+      </div>
+      <div class="w3-col m3">
+        <input type="submit" value="Submit"><br><br>
+      </div>
+    </div>
+  </form>
+</div>
+
+<app-footer></app-footer>
