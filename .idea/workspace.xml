@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7afc8696-daad-43f6-b292-03a387341944" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/swe645-hm3/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/swe645-hm3/src/app/models/StudentSurvey.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swe645-hm3/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swe645-hm3/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/swe645-hm3/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swe645-hm3/src/app/landing/landing.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/swe645-hm3/src/app/landing/landing.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swe645-hm3/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/swe645-hm3/src/app/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swe645-hm3/src/app/survey-list/survey-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/swe645-hm3/src/app/survey-list/survey-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swe645-hm3/src/app/survey-list/survey-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/swe645-hm3/src/app/survey-list/survey-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swe645-hm3/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/swe645-hm3/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +67,8 @@
       <updated>1616993802785</updated>
       <workItem from="1616993804574" duration="4343000" />
       <workItem from="1617123423410" duration="13757000" />
-      <workItem from="1617209458418" duration="5871000" />
+      <workItem from="1617209458418" duration="7416000" />
+      <workItem from="1617243742276" duration="985000" />
     </task>
     <servers />
   </component>
