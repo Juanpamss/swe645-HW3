@@ -1,0 +1,75 @@
+<!-- Survey form -->
+<div class="w3-row-padding w3-container" style="background-color: #FFCC33; padding-top: 10px;">
+    <h1 class="w3-x-large">Please provide feedback about your campus visit</h1>
+    <form method="post" #navbarForm="ngForm" autocomplete="on" id="surveyForm" (ngSubmit)="submitForm(navbarForm)" ngNativeValidate>
+        <div class="w3-row">
+            <h6 style="font-weight: bold;">All fields marked with * are required</h6>
+            <div class="w3-col m6">
+                <label for="name">Name *</label><br>
+                <input type="text" id="name" name="name" required autofocus ngModel><br><br>
+                <label for="last name">Last Name *</label><br>
+                <input type="text" id="last name" name="last_name" required ngModel><br><br>
+                <label for="address">Address *</label><br>
+                <input type="text" id="address" name="address" required ngModel><br><br>
+                <label for="city">City *</label><br>
+                <input type="text" id="city" name="city" required ngModel><br><br>
+                <label for="state">State *</label><br>
+                <input type="text" id="state" name="state" required ngModel><br><br>
+                <label for="preferences" style="font-weight: bold;">What you liked the most about the
+                  campus</label><br>
+                <div class="preferencesList">
+                    <input type="checkbox" id="students" name="preferences" value="Students" ngModel>
+                    <label for="students"> Students</label><br>
+                    <input type="checkbox" id="location" name="preferences" value="Location" ngModel>
+                    <label for="location"> Location</label><br>
+                    <input type="checkbox" id="campus" name="preferences" value="Campus" ngModel>
+                    <label for="campus"> Campus</label><br>
+                    <input type="checkbox" id="atmosphere" name="preferences" value="Atmosphere" ngModel>
+                    <label for="atmosphere"> Atmosphere</label><br>
+                    <input type="checkbox" id="dorm rooms" name="preferences" value="Dorm rooms" ngModel>
+                    <label for="dorm rooms"> Dorm rooms</label><br>
+                    <input type="checkbox" id="sports" name="preferences" value="Sports" ngModel>
+                    <label for="sports"> Sports</label><br>
+                </div>
+                <br>
+                <label for="recomm" style="font-weight: bold;">What is the likelihood you recommend us</label>
+                <select name="recommend" id="recommend" ngModel>
+          <option value="Very Likely">Very Likely</option>
+          <option value="Likely">Likely</option>
+          <option value="Unlikely">Unlikely</option>
+        </select><br><br>
+            </div>
+            <div class="w3-col m6">
+                <label for="zip">Zip *</label><br>
+                <input type="number" id="zip" name="zip" pattern="[0-9]{5}" required ngModel><br><br>
+                <label for="date">Date *</label><br>
+                <input type="date" id="date" name="date" required ngModel><br><br>
+                <label for="telephone">Telephone *</label><br>
+                <input type="tel" id="telephone" name="telephone" placeholder="202-455-6785" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required ngModel><br><br>
+                <label for="email">Email *</label><br>
+                <input type="email" id="email" name="email" placeholder="email@gmail.com" required ngModel><br><br>
+                <label for="interested" style="font-weight: bold;">How you became interested about
+                  GMU</label><br>
+                <div class="interestedList">
+                    <input type="radio" id="friends" name="interested" value="friends" ngModel>
+                    <label for="friends">Friends</label><br>
+                    <input type="radio" id="television" name="interested" value="television" ngModel>
+                    <label for="television">Television</label><br>
+                    <input type="radio" id="Internet" name="interested" value="internet" ngModel>
+                    <label for="Internet">Internet</label><br>
+                    <input type="radio" id="other" name="interested" value="other" ngModel>
+                    <label for="other">Other</label><br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col m3">
+                <input class="button" type="button" onclick="window.location.replace('index.html')" value="Cancel" />
+            </div>
+            <div class="w3-col m3">
+                <input type="submit" value="Submit"><br><br>
+            </div>
+        </div>
+    </form>
+</div>

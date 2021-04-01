@@ -1,0 +1,39 @@
+<!-- Survey form -->
+<div class="w3-row-padding w3-container" style="background-color: #FFCC33; padding-top: 10px;">
+  <br>
+  <h1 class="w3-x-large">Surveys Completed</h1>
+  <div class="w3-row">
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th>Telephone</th>
+        <th>Email</th>
+        <th>Date</th>
+        <th>Preferences</th>
+        <th>Interested</th>
+        <th>Recommend</th>
+      </tr>
+      <tr *ngFor="let studentSurvey of studentSurveyList; let i = index">
+        <td>{{studentSurvey.name}}</td>
+        <td>{{studentSurvey.lastName}}</td>
+        <td>{{studentSurvey.address}}</td>
+        <td>{{studentSurvey.city}}</td>
+        <td>{{studentSurvey.state}}</td>
+        <td>{{studentSurvey.zip}}</td>
+        <td>{{studentSurvey.telephone}}</td>
+        <td>{{studentSurvey.email}}</td>
+        <td>{{(parseDateToCustomFormat(studentSurvey.date).getMonth() + 1) + '/' + parseDateToCustomFormat(studentSurvey.date).getDate() + '/' + parseDateToCustomFormat(studentSurvey.date).getFullYear()}}</td>
+        <td>{{studentSurvey.preferences}}</td>
+        <td>{{studentSurvey.interested}}</td>
+        <td>{{studentSurvey.recommend}}</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+</div>
