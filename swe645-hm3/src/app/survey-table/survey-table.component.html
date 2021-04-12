@@ -7,7 +7,7 @@
     <table>
       <tr>
         <th>Name</th>
-        <th>Last Name</th>
+        <th class="lastName">Last Name</th>
         <th>Address</th>
         <th>City</th>
         <th>State</th>
@@ -15,7 +15,7 @@
         <th>Telephone</th>
         <th>Email</th>
         <th>Date</th>
-        <th>Preferences</th>
+        <th class="preferences">Preferences</th>
         <th>Interested</th>
         <th>Recommend</th>
       </tr>
@@ -29,7 +29,7 @@
         <td>{{studentSurvey.telephone}}</td>
         <td>{{studentSurvey.email}}</td>
         <td>{{(parseDateToCustomFormat(studentSurvey.date).getMonth() + 1) + '/' + parseDateToCustomFormat(studentSurvey.date).getDate() + '/' + parseDateToCustomFormat(studentSurvey.date).getFullYear()}}</td>
-        <td>{{studentSurvey.preferences}}</td>
+        <td class="preferences">{{studentSurvey.preferences}}</td>
         <td>{{studentSurvey.interested}}</td>
         <td>{{studentSurvey.recommend}}</td>
       </tr>

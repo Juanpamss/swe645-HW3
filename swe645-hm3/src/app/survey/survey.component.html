@@ -1,7 +1,7 @@
 <!-- Survey form -->
 <div class="w3-row-padding w3-container" style="background-color: #FFCC33; padding-top: 10px;">
     <h1 class="w3-x-large">Please provide feedback about your campus visit</h1>
-    <form method="post" #navbarForm="ngForm" autocomplete="on" id="surveyForm" (ngSubmit)="submitForm(navbarForm)" ngNativeValidate>
+    <form method="post" #navbarForm="ngForm" autocomplete="on" id="surveyForm" (submit)="submitForm(navbarForm)" ngNativeValidate>
         <div class="w3-row">
             <h6 style="font-weight: bold;">All fields marked with * are required</h6>
             <div class="w3-col m6">

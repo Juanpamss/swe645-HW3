@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {StudentSurveyService} from "../services/student-survey.service";
 import {StudentSurvey} from "../models/StudentSurvey.model";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-survey',
@@ -9,7 +10,10 @@ import {StudentSurvey} from "../models/StudentSurvey.model";
 })
 export class SurveyComponent implements OnInit {
 
-  constructor(private _studentSurvey: StudentSurveyService) { }
+  constructor(
+    private _studentSurvey: StudentSurveyService,
+    private _router: Router
+  ) { }
 
   studentSurvey: StudentSurvey = new StudentSurvey()
 
@@ -48,6 +52,12 @@ export class SurveyComponent implements OnInit {
         console.log("Success!")
       }
     )
+
+    this.submitMessage()
   }
 
+  submitMessage() {
+    alert("Survey submitted. Thank you!");
+    window.location.reload()
+  }
 }
