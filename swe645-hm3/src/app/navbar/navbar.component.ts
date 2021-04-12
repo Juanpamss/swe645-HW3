@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  //Parameters received to change the info displayed
   @Input() surveyClass: string;
   @Input() surveyListClass: string;
 

@@ -20,6 +20,7 @@ export class SurveyComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //Submit the form once all the necessary data has been filled out
   submitForm(surveyData){
 
     let checkboxValues = []
@@ -31,9 +32,7 @@ export class SurveyComponent implements OnInit {
       }
     }
 
-
-
-
+    //Parse and assign each input from the survey
     this.studentSurvey.name = surveyData.value.name;
     this.studentSurvey.lastName = surveyData.value.last_name;
     this.studentSurvey.address = surveyData.value.address;

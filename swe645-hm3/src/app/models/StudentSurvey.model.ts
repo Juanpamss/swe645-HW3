@@ -1,3 +1,4 @@
+//Model to represent a student survey
 export class StudentSurvey {
   name: string;
   lastName: string;

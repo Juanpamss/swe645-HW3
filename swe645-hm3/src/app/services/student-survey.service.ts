@@ -10,11 +10,13 @@ export class StudentSurveyService {
 
   constructor(private httpClient: HttpClient) { }
 
+  //Get all surveys completed
   getStudentSurveyList(): Observable<any>{
 
-    return this.httpClient.get("http://18.234.80.212/swe645-HW3-WebService/StudentSurveyServlet")
+    return this.httpClient.get("http://35.199.13.104:8080/swe645-HW3-WebService/StudentSurveyServlet")
   }
 
+  //Insert a new survey into the DB
   postStudentSurvey(surveyData: StudentSurvey): Observable<any> {
 
     let httpParams = new HttpParams()
@@ -33,7 +35,7 @@ export class StudentSurveyService {
 
     const body = JSON.stringify(surveyData);
 
-    return this.httpClient.post("http://18.234.80.212/swe645-HW3-WebService/StudentSurveyServlet",body, {
+    return this.httpClient.post("http://35.199.13.104:8080/swe645-HW3-WebService/StudentSurveyServlet",body, {
       params: httpParams
     })
   }
